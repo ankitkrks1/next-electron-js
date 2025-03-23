@@ -140,12 +140,19 @@ This will start both the Next.js development server and the Electron app.
 To build the application for production:
 
 ```bash
-npm run build
-# or
-yarn build
+npm run package-mac
+
 ```
 
-The output will be available in the `dist` directory.
+The output will be available in the release-builds/** 
+
+Note : you need to first co inside the MacOs app and run it from there first time from terminal. 
+
+```bash
+./release-builds/next-electron-app-darwin-arm64/next-electron-app.app/Contents/MacOS/<appName>
+
+```
+Then ready to run from app icon
 
 ## Folder Structure
 

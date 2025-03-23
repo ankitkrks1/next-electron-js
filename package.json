@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "npm run dev & npm run electron",
     "lint": "next lint",
-    "package-mac":"npm run build && electron-packager . --overwrite --platform=darwin  --prune=true --out=release-builds --icon=/public/icon.icns"
+    "package-mac":"electron-packager . --overwrite --platform=darwin  --prune=true --out=release-builds --icon=./public/icon.icns"
   },
   "dependencies": {
     "electron-next":"^3.1.5",
