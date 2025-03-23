@@ -87,3 +87,9 @@ Then ready to run from app icon
 
 ---
 Happy coding!
+
+
+Buy me a Dosha :
+
+[![Open Collective](https://img.shields.io/opencollective/all/sharemydisk?logo=open-collective)](https://opencollective.com/sharemydisk)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/ankitkrks1?label=GitHub%20Sponsors&logo=github)](https://github.com/sponsors/ankitkrks1)

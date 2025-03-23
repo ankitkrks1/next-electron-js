@@ -1,0 +1,12 @@
+node_modules
+.git
+test
+.env
+# next.js
+/.next/
+/out/
+*.next*
+
+# production
+/build
+/release-builds
