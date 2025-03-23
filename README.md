@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Electron App
+
+This repository contains a project that combines **Next.js** and **Electron** to create a modern desktop application with web technologies. It leverages the power of Next.js for server-side rendering and Electron for building cross-platform desktop apps.
+
+## Features
+
+- **Next.js** for React-based server-side rendering and routing.
+- **Electron** for creating desktop applications with native capabilities.
+- Hot-reloading for both the renderer and main processes during development.
+- Cross-platform support (Windows, macOS, and Linux).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Yarn](https://yarnpkg.com/) or npm
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/next-electron-app.git
+    cd next-electron-app
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+### Development
+
+To start the development environment:# Next Electron App
+
+This repository contains a project that combines **Next.js** and **Electron** to create a modern desktop application with web technologies. It leverages the power of Next.js for server-side rendering and Electron for building cross-platform desktop apps.
+
+## Features
+
+- **Next.js** for React-based server-side rendering and routing.
+- **Electron** for creating desktop applications with native capabilities.
+- Hot-reloading for both the renderer and main processes during development.
+- Cross-platform support (Windows, macOS, and Linux).
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Yarn](https://yarnpkg.com/) or npm
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/next-electron-app.git
+    cd next-electron-app
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+### Development
+
+To start the development environment:
+
+```bash
+npm run start
+```
+
+This will start both the Next.js development server and the Electron app.
+
+### Build
+
+To build the application for production:
+
+1. Build the Next.js application:
+
+    ```bash
+    npm run build
+    ```
+
+2. Package the Electron app for macOS:
+
+    ```bash
+    npm run package-mac
+    ```
+
+The packaged application will be available in the `release-builds` directory.
+
+### Scripts Overview
+
+- `npm run dev`: Starts the Next.js development server with hot-reloading.
+- `npm run electron`: Starts the Electron app.
+- `npm run start`: Runs both the Next.js server and the Electron app in development mode.
+- `npm run build`: Builds the Next.js application for production.
+- `npm run package-mac`: Packages the Electron app for macOS.
+
+## Folder Structure
+
+- `main/`: Contains the Electron main process code.
+- `renderer/`: Contains the Next.js application.
+- `public/`: Static assets for the Next.js app.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+Happy coding!
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start both the Next.js development server and the Electron app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the application for production:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+The output will be available in the `dist` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `main/`: Contains the Electron main process code.
+- `renderer/`: Contains the Next.js application.
+- `public/`: Static assets for the Next.js app.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue or submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+Happy coding!

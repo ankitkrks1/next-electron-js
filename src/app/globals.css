@@ -1,26 +1,281 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global Styles */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+/* Default Component Styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #0070f3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0070f3; /* Navbar background color */
+  padding: 1rem;
+  gap: 1rem; /* Space between links */
+}
+
+.navbar a {
+  color: white; /* Link text color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Adds padding for better click area */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: white; /* Hover background color */
+  color: #0070f3; /* Hover text color */
+}/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f7; /* macOS light background */
+  color: #1d1d1f; /* macOS dark text color */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global Styles */
+a {
+  text-decoration: none;
+  color: #007aff; /* macOS link color */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0056d6; /* Darker link color on hover */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #e5e5ea; /* macOS button background */
+  color: #1d1d1f;
+  padding: 0.5rem 1rem;
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #d1d1d6; /* Darker button background on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px; /* Subtle rounding for images */
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+/* Default Component Styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1d1d1f;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #3a3a3c; /* Subtle text color */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #007aff; /* macOS primary button color */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056d6; /* Darker hover color */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f7; /* macOS toolbar background */
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #d1d1d6; /* Subtle border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar a {
+  color: #007aff; /* macOS link color */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #e5e5ea; /* Hover background */
+  color: #0056d6; /* Hover text color */
+}
+
+/* macOS Window-like Styling */
+.window {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.window-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f5f5f7;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d1d1d6;
+}
+
+.window-header .traffic-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.traffic-light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff5f57; /* Close button */
+}
+
+.traffic-light:nth-child(2) {
+  background-color: #ffbd2e; /* Minimize button */
+}
+
+.traffic-light:nth-child(3) {
+  background-color: #28c840; /* Maximize button */
 }
